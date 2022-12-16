@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+.flag {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #2e2e2e;
+  width: 120px;
+  height: 50px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.flag:hover {
+  width: 400px;
+  color: transparent;
+}
+.flag:hover .attribution {
+  width: 400px;
+  opacity: 1;
+}
+
+.attribution {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 0;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background: hsl(233deg, 47%, 7%);
+}
+
+.statcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stat {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background: hsl(244deg, 38%, 16%);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+.stat__details {
+  padding: 4rem;
+}
+.stat__details h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 18rem;
+}
+.stat__details h2 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.stat__details p {
+  margin-top: 1.5rem;
+  max-width: 24rem;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Inter", sans-serif;
+  line-height: 2rem;
+}
+.stat__numbers {
+  display: flex;
+  justify-content: justify;
+}
+.stat__companies {
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+.stat__companies h3 {
+  color: hsl(0deg, 0%, 100%);
+}
+.stat__companies span {
+  color: hsla(0deg, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.stat__imagecon {
+  position: relative;
+  width: 450px;
+  object-fit: cover;
+  background: hsl(244deg, 38%, 16%);
+}
+.stat__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.stat__image--overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: hsl(277deg, 64%, 61%);
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 940px) {
+  .statcon {
+    margin: 4rem 0;
+  }
+  .stat {
+    flex-direction: column-reverse;
+    width: fit-content;
+  }
+  .stat__imagecon {
+    width: 300px;
+    padding: 0rem;
+  }
+  .stat__image {
+    width: 100%;
+    height: 100%;
+  }
+  .stat__details {
+    padding: 0rem;
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+  .stat__details h2 {
+    max-width: 14rem;
+  }
+  .stat__details p {
+    max-width: 17rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
